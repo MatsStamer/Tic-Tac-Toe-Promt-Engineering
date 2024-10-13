@@ -10,10 +10,30 @@
 
 <h1>Tic Tac Toe</h1>
 <div class="symbols">
-    <span class="O">O</span>
-    <span class="X">X</span> 
+    <span>
+        <svg class="symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(254,192,0)">
+            <path d="M4 4L20 20M20 4L4 20" stroke="rgb(254,192,0)" stroke-width="2" />
+        </svg>
+    </span>
+    <span>
+        <svg class="symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(254,192,0)">
+            <circle cx="12" cy="12" r="10" stroke="rgb(48,205,216)" stroke-width="2" fill="none"/>
+        </svg>
+    </span>
 </div>
-<div id="content"></div>
-    <script src="script.js"></script>
+<div id="content">
+    
+</div>
+<div class="symbols">
+    <div id="winnerSymbolDisplay"></div>
+    <div id="winnerMessage"></div>
+</div>
+<div class="current-player" id="currentPlayerDisplay">
+    <h1>Aktueller Spieler:</h1>
+    <span id="currentSymbolDisplay"></span>
+</div>
+
+
+    <script src="script.js" defer></script>
 </body>
 </html>
